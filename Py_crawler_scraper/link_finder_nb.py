@@ -3,7 +3,9 @@ from html.parser import HTMLParser
 from urllib import parse
 
 class LinkFinder(HTMLParser):
-
+#https://stackoverflow.com/questions/2709821/what-is-the-purpose-of-self
+#https://stackoverflow.com/questions/625083/python-init-and-self-what-do-they-do
+#https://stackoverflow.com/questions/23302018/usefulness-of-def-init-self
     def __init__(self,base_url,page_url):
         super().__init__()
         self.base_url=base_url
